@@ -1,0 +1,157 @@
+/*for small scrren like tablets*/
+
+@media (max-width: 768px) { 
+  .desktop-nav {
+      display: none; 
+  }
+  .mobile-nav {
+      display: flex; 
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .profile,
+  .section-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+      padding: 20px 60px;
+  }
+
+  section,
+  .section-container {
+      height: fit-content;
+  }
+
+  section {
+      margin: 0 5%;
+  }
+
+  .section__pic-container {
+      width: 250px;
+      height: 250px;
+      margin: 0 auto 1rem;
+      padding-bottom: 10rem; /* Fixed spacing issue */
+  }
+
+  .profile-pic {
+    width: 100%; 
+    height: auto;
+  }
+
+  .socials {
+    flex-direction: column; 
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px; 
+  }
+
+  .about-containers {
+      margin-top: 0;
+  }
+
+  .contact-form {
+      width: 100%;
+  }
+
+  .project-grid {
+      margin-top: 5rem; 
+  }
+
+  .project-card {
+    flex: 0 1 100%; 
+  }
+
+  .section-title {
+      font-size: 1.75rem; 
+      margin-bottom: 0;
+  }
+
+  .main {
+      flex-direction: column;
+      margin: 0;
+  }
+
+  footer {
+      padding: 20px; 
+      flex-direction: column; 
+      text-align: center; 
+      display: flex; 
+      margin-top: 30px;
+  } 
+
+  .footer-content p {
+      font-size: 0.9rem; 
+      margin: 5px; 
+  }
+} 
+
+/*for smaller screens like mobile*/
+@media (max-width: 480px) {
+    /* General adjustments */
+    body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh; 
+    }
+
+    .main-content {
+        flex: 1;
+        padding-bottom: 20px;
+    }
+
+    /* Profile adjustments */
+    .profile {
+        padding: 0 15px;
+        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-pic {
+        width: 180px; 
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    /* Section adjustments */
+    .section-container {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .section-title {
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+    }
+
+    /* Social links adjustments */
+    .socials {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 20px 0; 
+    }
+
+    /* Footer adjustments */
+    footer {
+        padding: 15px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: auto; 
+        background-color: #f8f8f8; 
+    }
+
+    .footer-content p {
+        font-size: 0.85rem;
+        margin: 5px 0;
+    }
+}

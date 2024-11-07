@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <!-- Preconnect to Google Fonts for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Google Fonts stylesheet -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- Link to external stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+
+<body>
+
+    <header>
+        <nav id="desktop-nav">
+            <div class="logo-container">
+                Dulain Perera <!-- Logo or name -->
+            </div>
+            <div>
+                <ul class="nav-links"> <!-- Navigation links -->
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="work.html">My Work</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <nav id="mobile-nav"> <!-- Mobile navigation -->
+        <div class="logo-container">Dulain Perera</div>
+        
+        <div class="mobile-menu" onclick="toggleMenu()"> <!-- Menu toggle function -->
+            <img src="arrow-down.png" alt="Menu" class="mobile-icon">
+            <ul class="menu-links"> <!-- Mobile menu links -->
+                <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+                <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+                <li><a href="work.html" onclick="toggleMenu()">My Work</a></li>
+                <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div>
+            <h1 class="section-title">My Work</h1> <!-- Section title for projects -->
+
+            <div class="project-grid"> <!-- Grid layout for projects -->
+
+                <!-- Project cards with details -->
+                <a href="#" class="project-card" target="_blank">
+                    <div>
+                        <h3>Student Mark Calculator</h3>
+                        <p>A Python-based program that automates the calculation of student marks, including grade breakdowns and overall performance insights.</p>
+                    </div>
+                </a>
+
+                
+                <a href="#" class="project-card" target="_blank">
+                    <div>
+                        <h3>Plane Ticket Manager</h3>
+                        <p>A Java application developed as coursework, designed to manage plane tickets, track passenger details, and streamline booking processes.</p>
+                    </div>
+                </a>
+
+               
+                <a href="#" class="project-card" target="_blank">
+                    <div>
+                        <h3>User Authentication System</h3>
+                        <p>A Laravel-powered website with a secure user authentication system, including features for registration, login, and password management.</p>
+                    </div>
+                </a>
+
+                
+                <a href="#" class="project-card" target="_blank">
+                    <div>
+                        <h3>FRED Online Store</h3>
+                        <p>An e-commerce prototype built for web development coursework, featuring product listings, shopping cart functionality, and responsive design with HTML, CSS, and JavaScript.</p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Dulain Perera - All rights reserved.</p> <!-- Footer-->
+            <p class="footer-contact">Contact: <a href="mailto:dulainp337@gmail.com">dulainp337@gmail.com</a></p> <!-- Footer contact information -->
+        </div>
+    </footer>
+
+    <script src="script.js"></script> <!-- External JavaScript file -->
+</body>
+
+</html>

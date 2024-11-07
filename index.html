@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <!-- Font for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Custom CSS stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+
+<body>
+
+    <header>
+        <!-- Desktop navigation bar -->
+        <nav id="desktop-nav">
+            <div class="logo-container">
+                Dulain Perera
+            </div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="work.html">My Work</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile navigation bar -->
+    <nav id="mobile-nav">
+        <div class="logo-container">Dulain Perera</div>
+        
+        <!-- Menu button for mobile -->
+        <div class="mobile-menu" onclick="toggleMenu()">
+            <img src="arrow-down.png" alt="Menu" class="mobile-icon">
+            <ul class="menu-links">
+                <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+                <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+                <li><a href="work.html" onclick="toggleMenu()">My work</a></li>
+                <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="profile">
+            <div class="section__pic-container">
+                <!-- Profile picture -->
+                <img src="profile-pic.jpg" alt="Dulain Perera profile picture" class="profile-pic">
+            </div>
+
+            <div class="section__text">
+                <p class="section_text_p1">Hello, I'm</p>
+                <h1 class="title">Dulain Perera</h1>
+                <p>Hello, and welcome to my portfolio! I’m a 2nd year computer science undergraduate with a strong foundation in Python, Java, and HTML and currently exploring other frameworks like Laravel and Spring Boot. My journey in tech has been shaped by a commitment to learning and a passion for building functional, engaging websites and applications.</p>
+
+                <div class="socials">
+                    <!-- Contact button and social media links -->
+                    <a href="contact.html" class="contact-button">Contact Me</a>
+                    <a href="https://github.com/userinterface17" class="fa fa-github" target="_blank"></a>
+                    <a href="https://www.linkedin.com/in/dulain-perera-091778292" class="fa fa-linkedin" target="_blank"></a>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <!-- Footer content with copyright and contact info -->
+            <p>&copy; 2024 Dulain Perera - All rights reserved.</p>
+            <p class="footer-contact">Contact: <a href="mailto:dulainp337@gmail.com">dulainp337@gmail.com</a></p>
+        </div>
+    </footer>
+
+    <!-- JavaScript file-->
+    <script src="script.js"></script>
+</body>
+
+</html>

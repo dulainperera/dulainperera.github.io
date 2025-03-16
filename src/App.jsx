@@ -1,4 +1,6 @@
+import Intro from './components/Intro';
 import Navbar from './components/navbar';
+
 
 const App = () => {
   return (
@@ -8,6 +10,7 @@ const App = () => {
 
       <div className="container mx-auto px-8">
         <Navbar />
+        <Intro />
       </div>
       
     </div>

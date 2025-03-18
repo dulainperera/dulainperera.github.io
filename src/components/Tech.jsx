@@ -4,9 +4,9 @@ const Tech = () => {
   return (
     <div className="border-b border-neutral-900 pb-4 lg:mb-35">
       <h2 className="text-4xl font-thin mt-10 mb-10 text-center">Technologies</h2>
-      <div className="flex flex-col md:flex-row gap-6 justify-between">
+      <div className="flex flex-col md:flex-row gap-6 justify-between text-center">
         
-        <div className="flex-1 border border-gray-700 rounded-xl p-6 shadow-xl">
+        <div className="flex-1 border border-gray-700 rounded-xl p-6 shadow-xl ">
           <h3 className="text-xl mb-4 font-medium">Languages</h3>
           <ul className="space-y-2">
             <li className="flex items-center">

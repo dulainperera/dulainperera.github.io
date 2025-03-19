@@ -1,9 +1,9 @@
 import Contact from './components/Contact';
 import Experience from './components/Experience';
 import Intro from './components/Intro';
-import Navbar from './components/navbar';
+import Navbar from './components/Navbar';
+import Projects from './components/Projects';
 import Tech from './components/Tech';
-
 
 const App = () => {
   return (
@@ -16,10 +16,11 @@ const App = () => {
         <Intro />
         <Tech />
         <Experience />
+        <Projects />
         <Contact />
       </div>
     </div>
-  )
+  );
 }
 
 export default App;

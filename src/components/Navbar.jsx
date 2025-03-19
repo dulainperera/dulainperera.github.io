@@ -6,7 +6,7 @@ const Navbar = () => {
       <div className="flex flex-shrink-0 items-center">
         <p className="text-2xl">Dulain Perera</p>
       </div>
-      <div className="m-8 flex items-center justify-center gap-6 text-4xl">
+      <div className="m-8 flex items-center justify-center gap-8 text-4xl">
         <a href="https://www.linkedin.com/in/dulain-perera-091778292/" target="_blank" className="text-gray-500 hover:text-blue-700 transition duration-300 ease-in-out">
           <FaLinkedin />
         </a>

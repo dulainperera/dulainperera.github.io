@@ -15,7 +15,7 @@ const Intro = () => {
             <span className="text-2xl">
               Undergraduate
             </span>
-            <p className="my-2 max-w-xl py-6 tracking-tighter">
+            <p className="max-w-xl py-6 text-gray-400">
               Hello, and welcome to my portfolio! I'm a 2nd year computer science undergraduate with a strong foundation in Python, Java, and HTML and currently exploring other frameworks like Laravel and Spring Boot. My journey in tech has been shaped by a commitment to learning and a passion for building functional, engaging websites and applications.
             </p>
             <div className="m-8 flex items-center justify-center gap-8 text-4xl">

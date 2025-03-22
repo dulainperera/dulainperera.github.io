@@ -3,7 +3,7 @@ import { PROJECTS } from '../data/constants';
 
 const Projects = () => {
   return (
-    <div className="border-b border-neutral-900 pb-4">
+    <div className="pb-20 lg:mb-35">
       <h1 className="my-20 text-center text-4xl">Projects</h1>
       <div>
         {PROJECTS.map((project, index) => (
@@ -17,7 +17,7 @@ const Projects = () => {
                 className="mb-6 rounded" 
               />
             </div> 
-            <div className="w-full max-w-xl lg:w-3/4 lg:pl-8">
+            <div className="w-full max-w-xl lg:w-3/4 lg:pl-8 ">
               <h6 className="mb-2 font-semibold">{project.title}</h6>
               <p className="mb-4 text-neutral-400">{project.description}</p>
               <div className="flex flex-wrap gap-2">

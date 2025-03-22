@@ -2,7 +2,7 @@ import React from 'react'
 
 const Tech = () => {
   return (
-    <div className="border-b border-neutral-900 pb-4 lg:mb-35">
+    <div className="pb-20 lg:mb-35">
       <h2 className="text-4xl  mt-10 mb-10 text-center">Technologies</h2>
       <div className="flex flex-col md:flex-row gap-6 justify-between text-center">
         

@@ -1,14 +1,44 @@
-import React from 'react'
+import React from 'react';
+import { motion } from 'framer-motion';
 
 const Tech = () => {
+  const headingVariants = {
+    hidden: { y: -100, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: { duration: 0.5, delay: 0.2 },
+    },
+  };
+
+  const sectionVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.5, delay: 0.3 },
+    },
+  };
+
   return (
     <div className="pb-20 lg:mb-35">
-      <h2 className="text-4xl  mt-10 mb-10 text-center">Technologies</h2>
-      <div className="flex flex-col md:flex-row gap-6 justify-between text-center">
-        
-        <div className="flex-1 border border-gray-700 rounded-xl p-6 shadow-xl ">
+      <motion.h2
+        variants={headingVariants}
+        initial="hidden"
+        animate="visible"
+        className="text-4xl mt-10 mb-10 text-center"
+      >
+        Technologies
+      </motion.h2>
+      <div className="flex flex-col gap-6 text-center">
+        <motion.div
+          variants={sectionVariants}
+          initial="hidden"
+          animate="visible"
+          className="flex-1 border border-gray-700 rounded-xl p-6 shadow-xl"
+        >
           <h3 className="text-xl mb-4 font-medium">Languages</h3>
-          <ul className="space-y-2">
+          <ul className="grid grid-cols-2 lg:grid-cols-4 gap-2">
             <li className="flex items-center">
               <span className="mr-2">•</span> Python
             </li>
@@ -31,12 +61,16 @@ const Tech = () => {
               <span className="mr-2">•</span> SQL
             </li>
           </ul>
-        </div>
+        </motion.div>
 
-        
-        <div className="flex-1 border border-gray-700 rounded-xl p-6 shadow-xl">
+        <motion.div
+          variants={sectionVariants}
+          initial="hidden"
+          animate="visible"
+          className="flex-1 border border-gray-700 rounded-xl p-6 shadow-xl"
+        >
           <h3 className="text-xl mb-4 font-medium">Libraries & Frameworks</h3>
-          <ul className="space-y-2">
+          <ul className="grid grid-cols-2 lg:grid-cols-4 gap-2">
             <li className="flex items-center">
               <span className="mr-2">•</span> React
             </li>
@@ -56,12 +90,16 @@ const Tech = () => {
               <span className="mr-2">•</span> Node.js
             </li>
           </ul>
-        </div>
+        </motion.div>
 
-        
-        <div className="flex-1 border border-gray-700 rounded-xl p-6 shadow-xl">
+        <motion.div
+          variants={sectionVariants}
+          initial="hidden"
+          animate="visible"
+          className="flex-1 border border-gray-700 rounded-xl p-6 shadow-xl"
+        >
           <h3 className="text-xl mb-4 font-medium">Tools</h3>
-          <ul className="space-y-2">
+          <ul className="grid grid-cols-2 lg:grid-cols-4 gap-2">
             <li className="flex items-center">
               <span className="mr-2">•</span> Git/GitHub
             </li>
@@ -81,10 +119,10 @@ const Tech = () => {
               <span className="mr-2">•</span> MongoDB
             </li>
           </ul>
-        </div>
+        </motion.div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Tech
+export default Tech;

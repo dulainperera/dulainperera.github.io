@@ -6,7 +6,7 @@ export const EXPERIENCES = [
     details: ''
   },
   {
-    period: '2023 - Present',
+    period: '2023 - 2027',
     title: 'BSc Computer Science',
     institution: 'Informatics Institute of Technology',
     details: ''

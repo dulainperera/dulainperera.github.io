@@ -22,7 +22,7 @@ const Experience = () => {
   };
 
   return (
-    <div className="pb-20 lg:mb-35">
+    <div className="pb-24 lg:mb-35">
       <motion.h1
         variants={headingVariants}
         initial="hidden"

@@ -15,7 +15,7 @@ const container = (delay) => ({
 
 const Intro = () => {
   return (
-    <div className=" pt-4 pb-4 lg:mb-35">
+    <div className=" pt-4 pb-30 lg:mb-35">
       <div className="flex flex-wrap">
         <div className="w-full lg:w-1/2">
           <div className="flex flex-col items-center lg:items-start">
@@ -27,20 +27,20 @@ const Intro = () => {
               Dulain Perera
             </motion.h1>
             <motion.span
-            variants={container(0)}
+            variants={container(0.5)}
             initial="hidden"
             animate="visible"
             className="text-3xl">
               Undergraduate
             </motion.span>
-            <motion.p variants={container(0)}
+            <motion.p variants={container(1)}
               initial="hidden"
               animate="visible" className="max-w-xl py-6 text-gray-400">
-              Hello, and welcome to my portfolio! I'm a 2nd year computer science undergraduate with a strong foundation in Python, Java, and HTML and currently exploring other frameworks like Laravel and Spring Boot. My journey in tech has been shaped by a commitment to learning and a passion for building functional, engaging websites and applications.
+              Hello, and welcome to my portfolio! I'm a 2nd year computer science undergraduate with a strong foundation in Java, and HTML and currently exploring frameworks and. My journey in tech has been shaped by a commitment to learning and a passion for building functional, engaging websites and applications.
             </motion.p>
 
             <motion.div 
-            variants={container(0)}
+            variants={container(1.5)}
             initial="hidden"
             animate="visible"
             className="m-8 flex items-center justify-center gap-8 text-4xl">
@@ -53,9 +53,7 @@ const Intro = () => {
               <a href="https://github.com/dulainperera" target="_blank" className="text-gray-500 hover:text-white transition duration-300 ease-in-out">
                 <FaGithub />
               </a>
-              <a href="https://www.instagram.com/dulain_03/" target="_blank" className="text-gray-500 hover:text-pink-500 transition duration-300 ease-in-out">
-                <FaInstagram />
-              </a>
+              
             </motion.div>
           </div>
         </div>

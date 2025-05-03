@@ -1,27 +1,22 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaJava, FaHtml5, FaCss3Alt, FaJs, FaReact, FaGitAlt } from 'react-icons/fa';
-import { SiTailwindcss, SiPostman, SiMysql } from 'react-icons/si';
+import { SiTailwindcss, SiMysql } from 'react-icons/si';
+
+const iconVariantants = (duration) => ({
+  initial: { y: -50 },
+  animate: {
+    y: [10, -10],
+    transition: {
+      duration: duration,
+      ease: "linear",
+      repeat: Infinity,
+      repeatType: "reverse",
+    },
+  },
+});
 
 const Tech = () => {
-  const headingVariants = {
-    hidden: { y: -100, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-      transition: { duration: 0.5, delay: 0.2 },
-    },
-  };
-
-  const techVariants = {
-    hidden: { opacity: 0, scale: 0.8 },
-    visible: {
-      opacity: 1,
-      scale: 1,
-      transition: { duration: 0.5 },
-    },
-  };
-
   const technologies = [
     { icon: <FaJava className="text-7xl text-blue-600" /> }, // Java (Blue)
     { icon: <FaHtml5 className="text-7xl text-orange-500" /> }, // HTML5 (Orange)
@@ -34,28 +29,26 @@ const Tech = () => {
   ];
 
   return (
-    <div className="pb-30 ">
-      <motion.h1
-        variants={headingVariants}
-        initial="hidden"
-        animate="visible"
-        className="text-center text-4xl mb-10"
+    <div className="pb-24 lg:mb-35">
+      <motion.h1 className="text-center text-4xl mb-20 lg:mt-16">Technologies</motion.h1> {/* Increased mb-10 to mb-16 */}
+      <motion.div
+        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, x: -100 }}
+        transition={{ duration: 1.5 }}
+        className="flex flex-wrap items-center justify-center gap-8 mt-8" // Added mt-8 for extra spacing
       >
-        Technologies
-      </motion.h1>
-      <div className="flex flex-wrap items-center justify-center gap-4">
         {technologies.map((tech, index) => (
           <motion.div
             key={index}
-            variants={techVariants}
-            initial="hidden"
+            variants={iconVariantants(2.5)}
+            initial="initial"
             animate="visible"
             className="rounded-2xl border-3 border-neutral-900 p-6 shadow-lg flex flex-col items-center"
           >
             {tech.icon}
           </motion.div>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 };

@@ -39,21 +39,53 @@ const Intro = () => {
               Hello, and welcome to my portfolio! I'm a 2nd year computer science undergraduate with a strong foundation in Java, and HTML and currently exploring frameworks and. My journey in tech has been shaped by a commitment to learning and a passion for building functional, engaging websites and applications.
             </motion.p>
 
+            
             <motion.div 
-            variants={container(1.5)}
-            initial="hidden"
-            animate="visible"
-            className="m-8 flex items-center justify-center gap-8 text-4xl">
-              <a href="mailto:dulainp337@gmail.com" target="_blank" className="text-gray-500 text-5xl hover:text-yellow-500 transition duration-300 ease-in-out mr-1" >
-                <MdEmail />
+              variants={container(1.5)}
+              initial="hidden"
+              animate="visible"
+              className="m-8 flex items-center justify-center gap-8 text-4xl"
+            >
+
+              {/* Download CV Button */}
+              <a
+                href="/Dulain_Perera_CV.pdf"
+                download
+                className="px-6 py-2 text-lg font-medium bg-gray-600 rounded-full hover:bg-gray-500 transition duration-300 ease-in-out"
+              >
+                Download CV
               </a>
-              <a href="https://www.linkedin.com/in/dulain-perera-091778292/" target="_blank" className="text-gray-500 hover:text-blue-700 transition duration-300 ease-in-out">
-                <FaLinkedin />
+
+              {/* Get in Touch Button */}
+              <a
+                href="mailto:dulainp337@gmail.com"
+                target="_blank"
+                className="px-6 py-2 text-lg font-medium bg-neutral-950 text-gray-500  border border-gray-500 rounded-full hover:bg-gray-500 transition duration-300 ease-in-out hover:text-neutral-950"
+              >
+                Get in Touch
               </a>
-              <a href="https://github.com/dulainperera" target="_blank" className="text-gray-500 hover:text-white transition duration-300 ease-in-out">
-                <FaGithub />
-              </a>
-              
+
+              {/* LinkedIn Icon */}
+{/* 
+<a
+  href="https://www.linkedin.com/in/dulain-perera-091778292/"
+  target="_blank"
+  className="text-gray-500 hover:text-blue-700 transition duration-300 ease-in-out"
+>
+  <FaLinkedin />
+</a>
+*/}
+
+{/* GitHub Icon */}
+{/* 
+<a
+  href="https://github.com/dulainperera"
+  target="_blank"
+  className="text-gray-500 hover:text-white transition duration-300 ease-in-out"
+>
+  <FaGithub />
+</a>
+*/}
             </motion.div>
           </div>
         </div>

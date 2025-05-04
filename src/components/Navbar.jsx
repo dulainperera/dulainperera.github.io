@@ -45,22 +45,22 @@ const Navbar = () => {
 
       {isOpen && (
         <div className="absolute top-16 left-0 w-full bg-neutral-950 flex flex-col items-center gap-8 text-xl py-4 md:hidden">
-          <a href="#intro" className="text-gray-500 hover:text-white relative transition duration-300 ease-in-out 
+          <a href="#intro" className="text-gray-300 hover:text-white relative transition duration-300 ease-in-out 
           after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-white 
           after:transition-all after:duration-300 hover:after:w-full" onClick={toggleMenu}>
             About
           </a>
-          <a href="#tech" className="text-gray-500 hover:text-white relative transition duration-300 ease-in-out 
+          <a href="#tech" className="text-gray-300 hover:text-white relative transition duration-300 ease-in-out 
           after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-white 
           after:transition-all after:duration-300 hover:after:w-full" onClick={toggleMenu}>
             Tech
           </a>
-          <a href="#experience" className="text-gray-500 hover:text-white relative transition duration-300 ease-in-out 
+          <a href="#experience" className="text-gray-300 hover:text-white relative transition duration-300 ease-in-out 
           after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-white 
           after:transition-all after:duration-300 hover:after:w-full" onClick={toggleMenu}>
             Experience
           </a>
-          <a href="#projects" className="text-gray-500 hover:text-white relative transition duration-300 ease-in-out 
+          <a href="#projects" className="text-gray-300 hover:text-white relative transition duration-300 ease-in-out 
           after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-white 
           after:transition-all after:duration-300 hover:after:w-full" onClick={toggleMenu}>
             Projects

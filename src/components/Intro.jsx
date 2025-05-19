@@ -36,7 +36,7 @@ const Intro = () => {
             <motion.p variants={container(1)}
               initial="hidden"
               animate="visible" className="max-w-xl py-6 text-gray-400">
-              Hello, and welcome to my portfolio! I'm a 2nd year computer science undergraduate with a strong foundation in Java, and HTML and currently exploring frameworks and. My journey in tech has been shaped by a commitment to learning and a passion for building functional, engaging websites and applications.
+              Hello, and welcome to my portfolio! I'm a 2nd year computer science undergraduate with a strong foundation in web development and currently exploring frameworks like React. My journey in tech has been shaped by a commitment to learning and a passion for building functional, engaging websites and applications.
             </motion.p>
 
             

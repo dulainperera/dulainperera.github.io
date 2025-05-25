@@ -94,7 +94,7 @@ const Intro = () => {
             initial={{ x:100, opacity: 0 }}
             animate={{x:0, opacity: 1 }}
             transition={{ duration:1, delay: 1.2 }}
-            src={profilePic} alt="Dulain Perera" className="rounded-lg shadow-lg w-4/5 mx-auto h-auto" />
+            src={profilePic} alt="Dulain Perera" className="rounded-full shadow-lg w-4/5 mx-auto h-auto" />
         </div>
       </div>
     </div>

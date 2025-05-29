@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa';
 import { MdEmail } from "react-icons/md";
-import profilePic from '../assets/profile-pic.jpg';
+import profilePic from '../assets/profile-pic.png';
 import { motion } from 'framer-motion';
 
 const container = (delay) => ({
@@ -65,36 +65,17 @@ const Intro = () => {
                 Get in Touch
               </a>
 
-              {/* LinkedIn Icon */}
-{/* 
-<a
-  href="https://www.linkedin.com/in/dulain-perera-091778292/"
-  target="_blank"
-  className="text-gray-500 hover:text-blue-700 transition duration-300 ease-in-out"
->
-  <FaLinkedin />
-</a>
-*/}
-
-{/* GitHub Icon */}
-{/* 
-<a
-  href="https://github.com/dulainperera"
-  target="_blank"
-  className="text-gray-500 hover:text-white transition duration-300 ease-in-out"
->
-  <FaGithub />
-</a>
-*/}
             </motion.div>
           </div>
+
         </div>
+
         <div className="w-full lg:w-1/2 lg:p-8">
           <motion.img 
             initial={{ x:100, opacity: 0 }}
             animate={{x:0, opacity: 1 }}
             transition={{ duration:1, delay: 1.2 }}
-            src={profilePic} alt="Dulain Perera" className="rounded-full shadow-lg w-4/5 mx-auto h-auto" />
+            src={profilePic} alt="Dulain Perera" className="rounded-full shadow-lg w-4/5 mx-auto h-auto vignette" />
         </div>
       </div>
     </div>

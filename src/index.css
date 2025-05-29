@@ -10,3 +10,8 @@
 html {
   scroll-behavior: smooth;
 }
+
+.vignette {
+  background: radial-gradient(ellipse at center, transparent 60%, rgba(0,0,0,0.4) 100%);
+  z-index: 2;
+}

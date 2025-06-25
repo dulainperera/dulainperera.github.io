@@ -33,11 +33,11 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Navbar Header */}
-      <div className="flex md:hidden items-center justify-between">
+      <div className="flex md:hidden mt-1.5 items-center justify-center gap-128 text-xl">
 
         <p className="text-2xl text-gray-300">DP</p>
 
-        <button onClick={toggleMenu} className="text-gray-500">
+        <button onClick={toggleMenu} className="text-gray-500 z-50">
           {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
         </button>
 

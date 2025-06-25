@@ -30,7 +30,7 @@ const Intro = () => {
             variants={container(0.5)}
             initial="hidden"
             animate="visible"
-            className="text-3xl">
+            className="text-3xl bg-gradient-to-r from-gray-400 to-gray-600 bg-clip-text text-transparent">
               Undergraduate
             </motion.span>
             <motion.p variants={container(1)}
@@ -47,11 +47,13 @@ const Intro = () => {
               className="m-8 flex items-center justify-center gap-8 text-4xl"
             >
 
-              {/* Download CV Button */}
+              {/* download CV button */}
               <a
                 href="/Dulain_Perera_CV.pdf"
                 download
-                className="px-6 py-2 text-sm md:text-lg font-medium bg-gray-600 rounded-full hover:bg-gray-500 transition duration-300 ease-in-out"
+                className="px-6 py-2 text-sm md:text-lg text-neutral-950 font-semibold rounded-full 
+                bg-gradient-to-r from-gray-400 to-gray-600 shadow-md 
+              hover:from-gray-300 hover:to-gray-500 transition duration-300 ease-in-out"
               >
                 Download CV
               </a>
@@ -60,7 +62,7 @@ const Intro = () => {
               <a
                 href="mailto:dulainp337@gmail.com"
                 target="_blank"
-                className="px-6 py-2 text-sm md:text-lg font-medium bg-neutral-950 text-gray-500 border border-gray-500 rounded-full hover:bg-gray-500 transition duration-300 ease-in-out hover:text-neutral-950"
+                className="px-6 py-2 text-sm md:text-lg bg-neutral-950 text-gray-500 border border-gray-500 rounded-full  transition duration-300 ease-in-out hover:text-gray-300 hover:border-gray-300 shadow-md"
               >
                 Get in Touch
               </a>

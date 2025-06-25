@@ -2,8 +2,9 @@ import Contact from './components/Contact';
 import Experience from './components/Experience';
 import Intro from './components/Intro';
 import Navbar from './components/Navbar';
-import Projects from './components/Projects';
+//import Projects from './components/Projects';
 import Tech from './components/Tech';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
@@ -22,12 +23,13 @@ const App = () => {
         <div id="experience" className="scroll-mt-36"> 
           <Experience />
         </div>
-        <div id="projects" className="scroll-mt-36"> 
+        {/*div id="projects" className="scroll-mt-36"> 
           <Projects />
-        </div>
+        </div> */}
         <div id="contact" className="scroll-mt-36"> 
           <Contact />
         </div>
+        <Footer/>
       </div>
     </div>
   );

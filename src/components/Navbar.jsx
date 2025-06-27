@@ -45,7 +45,7 @@ const Navbar = () => {
 
       {/* Mobile Dropdown Menu */}
       {isOpen && (
-        <div onClick={toggleMenu} className="md:hidden fixed inset-0 top-[60px] z-40 bg-black/60 backdrop-blur-md flex flex-col items-center justify-center gap-8 text-xl text-gray-300">
+        <div className="md:hidden fixed inset-0 top-[60px] z-40 bg-black/60 backdrop-blur-md flex flex-col items-center justify-center gap-8 text-xl text-gray-300">
           <a href="#tech" onClick={toggleMenu} >
             Tech
           </a>

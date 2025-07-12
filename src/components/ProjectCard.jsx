@@ -1,4 +1,4 @@
-import React from 'react';
+import PROJECTS from '../data/constants';
 
 
 const ProjectCard = ({ project }) => {

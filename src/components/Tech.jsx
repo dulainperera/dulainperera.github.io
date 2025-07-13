@@ -1,18 +1,4 @@
-
 import { motion } from 'framer-motion';
-
-const iconVariants = (duration) => ({
-  initial: { y: -50 },
-  animate: {
-    y: [10, -10],
-    transition: {
-      duration,
-      ease: 'linear',
-      repeat: Infinity,
-      repeatType: 'reverse',
-    },
-  },
-});
 
 const Tech = () => {
   const technologies = [
@@ -120,15 +106,12 @@ const Tech = () => {
         className="flex flex-wrap items-center justify-center gap-8 mt-8"
       >
         {technologies.map((tech, index) => (
-          <motion.div
+          <div
             key={index}
-            variants={iconVariants(2.5)}
-            initial="initial"
-            animate="animate"
             className="rounded-2xl border-2 border-neutral-900 p-6 shadow-lg flex flex-col items-center"
           >
             {tech.svg}
-          </motion.div>
+          </div>
         ))}
       </motion.div>
     </div>

@@ -12,7 +12,7 @@ const container = (delay) => ({
 
 const Intro = () => {
   return (
-    <div className="pt-2 pb-30 lg:mb-35">
+    <div className="pt-1 pb-30 lg:mb-35 mt-0">
       <div className="flex flex-col-reverse lg:flex-row flex-wrap">
         {/* Text Section */}
         <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start">
@@ -45,18 +45,20 @@ const Intro = () => {
             variants={container(1.5)}
             initial="hidden"
             animate="visible"
-            className="m-8 flex items-center justify-center gap-8 text-4xl"
+            className="m-8 flex items-center justify-center gap-16 text-4xl"
           >
             {/* download CV button */}
             <a
               href="/Dulain_Perera_CV.pdf"
               download
-              className="px-6 py-2 text-sm md:text-lg items-center text-neutral-950 font-semibold rounded-full 
-                bg-gradient-to-r from-gray-400 to-gray-600 shadow-md 
-              hover:from-gray-300 hover:to-gray-500 transition duration-300 ease-in-out"
+              className="px-6 py-2 text-sm md:text-lg items-center text-white rounded-full 
+                bg-gradient-to-r from-[#3a6c70] to-[#0f090c] shadow-[0_0_15px_#ff2fc54d] 
+                hover:shadow-[0_0_20px_#ff2fc57a] transition duration-300 ease-in-out 
+                "
             >
               Download CV
             </a>
+
 
             {/* Get in Touch Button */}
             <a

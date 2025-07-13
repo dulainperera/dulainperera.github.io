@@ -4,9 +4,9 @@ const Contact = () => {
 
   return (
     <div className="mb-16 text-neutral-500">
-      {/* Social Icons */}
+      {/* social icons */}
       <div className="flex justify-center space-x-5 sm:space-x-3">
-        {/* Facebook */}
+        {/* facebook */}
         <a
           href="https://www.facebook.com/Dulain03"
           aria-label="Facebook"
@@ -21,7 +21,7 @@ const Contact = () => {
           </span>
         </a>
 
-        {/* Instagram */}
+        {/* instagram */}
         <a
           href="https://www.instagram.com/dulain_03/"
           aria-label="Instagram"
@@ -36,7 +36,7 @@ const Contact = () => {
           </span>
         </a>
 
-        {/* LinkedIn */}
+        {/* linkedIn */}
         <a
           href="www.linkedin.com/in/dulain-perera-091778292"
           aria-label="LinkedIn"
@@ -51,7 +51,7 @@ const Contact = () => {
           </span>
         </a>
 
-        {/* GitHub */}
+        {/* gitHub */}
         <a
           href="https://github.com/dulainperera"
           aria-label="GitHub"
@@ -67,7 +67,7 @@ const Contact = () => {
         </a>
       </div>
 
-      {/* Footer */}
+      {/* footer text */}
       <div className="w-full p-4 text-center text-sm text-neutral-500">
         © 2025 Copyright: <span className="font-medium">Dulain Perera</span>
       </div>

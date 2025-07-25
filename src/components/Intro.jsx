@@ -45,30 +45,32 @@ const Intro = () => {
             variants={container(1.5)}
             initial="hidden"
             animate="visible"
-            className="m-8 flex items-center justify-center gap-16 text-4xl"
+            className="m-8 flex items-center justify-center gap-6 md:gap-10 text-4xl"
           >
-            {/* download CV button */}
+            {/* Download CV Button with gradient border and glow */}
             <a
               href="/Dulain_Perera_CV.pdf"
               download
-              className="px-6 py-2 text-sm md:text-lg items-center text-white rounded-full 
-                bg-gradient-to-r from-[#3a6c70] to-[#0f090c] shadow-[0_0_15px_#ff2fc54d] 
-                hover:shadow-[0_0_20px_#ff2fc57a] transition duration-300 ease-in-out 
-                "
+              className="group relative inline-block rounded-full p-[2px] bg-gradient-to-r from-sky-400 via-blue-500 to-purple-500 shadow-lg shadow-blue-500/30 hover:shadow-blue-500/60 transition duration-300 ease-in-out"
             >
-              Download CV
+              <span className="flex items-center justify-center px-6 py-2 text-sm md:text-lg text-gray-300 bg-neutral-950 rounded-full group-hover:text-white transition duration-300 ease-in-out">
+                Download CV
+              </span>
             </a>
 
-
-            {/* Get in Touch Button */}
+            {/* Get in Touch Button with same style */}
             <a
               href="mailto:dulainp337@gmail.com"
               target="_blank"
-              className="justify-center px-6 py-2 text-sm md:text-lg bg-neutral-950 text-gray-500 border border-gray-500 rounded-full  transition duration-300 ease-in-out hover:text-gray-300 hover:border-gray-300 shadow-md"
+              rel="noopener noreferrer"
+              className="group relative inline-block rounded-full p-[2px] bg-gradient-to-r from-sky-400 via-blue-500 to-purple-500 shadow-lg shadow-blue-500/30 hover:shadow-blue-500/60 transition duration-300 ease-in-out"
             >
-              Get in Touch
+              <span className="flex items-center justify-center px-6 py-2 text-sm md:text-lg text-gray-300 bg-neutral-950 rounded-full group-hover:text-white transition duration-300 ease-in-out">
+                Get in Touch
+              </span>
             </a>
           </motion.div>
+
         </div>
 
         {/* Image Section */}

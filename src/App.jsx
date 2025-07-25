@@ -1,5 +1,5 @@
 import Contact from './components/Contact';
-import Experience from './components/Experience';
+import Timeline from './components/Timeline';
 import Intro from './components/Intro';
 import Navbar from './components/Navbar';
 // import Projects from './components/Projects';
@@ -20,12 +20,13 @@ const App = () => {
         <div id="tech" className="scroll-mt-36"> 
           <Tech />
         </div>
-        <div id="experience" className="scroll-mt-36"> 
-          <Experience />
-        </div>
+        
         {/* <div id="projects" className="scroll-mt-36"> 
           <Projects />
         </div> */}
+        <div id="timeline" className="scroll-mt-36"> 
+          <Timeline />
+        </div>  
         <div id="contact" className="scroll-mt-36"> 
           <Contact />
         </div>

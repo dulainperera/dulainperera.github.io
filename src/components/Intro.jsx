@@ -14,6 +14,7 @@ const Intro = () => {
   return (
     <div className="pt-1 pb-30 lg:mb-35 mt-0">
       <div className="flex flex-col-reverse lg:flex-row flex-wrap">
+        
         {/* Text Section */}
         <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start">
           <motion.h1

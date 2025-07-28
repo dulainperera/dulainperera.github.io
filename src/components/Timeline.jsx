@@ -17,8 +17,8 @@ const Timeline = () => {
               {/* timeline dot */}
               <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-neutral-500 rounded-full z-10"></div>
               
-              {/* event card */}
-              <div className={`w-5/12 ${event.direction === 'left' ? 'pr-8' : 'pl-8'}`}>
+              {/* event card - consistent minimal padding across all screens */}
+              <div className={`w-2/5 lg:w-1/3 xl:w-80 ${event.direction === 'left' ? 'pr-1' : 'pl-1'}`}>
                 <EventCard 
                   id={event.id}
                   period={event.period}
@@ -37,7 +37,7 @@ const Timeline = () => {
 
 const EventCard = ({ id, period, title, institution, direction }) => {
   return (
-    <div className={`flex flex-col gap-y-2 border shadow-md rounded-xl p-4 bg-neutral-800 items-center ${
+    <div className={`flex flex-col gap-y-2 border shadow-md rounded-xl p-4 bg-neutral-800 ${
       direction === 'left' ? 'text-right items-end' : 'text-left items-start'
     }`}>
       <div className="text-sm text-neutral-400">{period}</div>

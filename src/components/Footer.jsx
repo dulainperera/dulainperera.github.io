@@ -4,7 +4,9 @@ const Contact = () => {
 
   return (
     <div className="mb-16 text-neutral-500">
-      {/* ocial Icons */}
+      
+      <div className="absolute z-[-1] w-[45%] h-[15%] -bottom-10 -left-20 rounded-full bg-pink-500/10 blur-3xl"></div>
+      {/* social Icons */}
       <div className="flex justify-center space-x-5 sm:space-x-3">
         {/* Facebook */}
         <a

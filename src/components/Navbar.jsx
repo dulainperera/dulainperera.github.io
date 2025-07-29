@@ -28,7 +28,7 @@ const Navbar = () => {
           </a>
         </div>
 
-        <div className="absolute z-[-1] w-[20%] h-[20%] -top-10 -right-10 rounded-full bg-sky-500/10 blur-3xl"></div>
+        
       </div>
 
       {/* Mobile Navbar Header */}

@@ -1,6 +1,7 @@
 import profilePic from '../assets/profile-pic.jpg';
 import { motion } from 'framer-motion';
 
+
 const container = (delay) => ({
   hidden: { x: -100, opacity: 0 },
   visible: {
@@ -12,32 +13,37 @@ const container = (delay) => ({
 
 const Intro = () => {
   return (
-    <div className="pt-1 pb-30 lg:mb-35 mt-0">
-      <div className="flex flex-col-reverse lg:flex-row flex-wrap">
+    <div className="px-4 sm:px-8 pt-4 pb-16 lg:pb-24">
+      <div className="flex flex-col-reverse lg:flex-row items-center gap-10">
         
         {/* Text Section */}
-        <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start">
+        <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left space-y-4 sm:space-y-6 max-w-2xl">
+          
+          <h1 className="text-xl sm:text-2xl text-zinc-400">Hello, I'm</h1>
+  
           <motion.h1
             variants={container(0)}
             initial="hidden"
             animate="visible"
-            className="pb-16 text-6xl font-thin tracking-tight lg:mt-16"
+            className="text-4xl sm:text-5xl font-light tracking-tight bg-gradient-to-r from-sky-500 to-zinc-500 bg-clip-text text-transparent"
           >
             Dulain Perera
           </motion.h1>
+  
           <motion.span
             variants={container(0.5)}
             initial="hidden"
             animate="visible"
-            className="text-3xl bg-gradient-to-r from-gray-400 to-gray-600 bg-clip-text text-transparent"
+            className="text-2xl sm:text-3xl font-medium bg-gradient-to-r from-gray-400 to-gray-600 bg-clip-text text-transparent"
           >
-            Undergraduate
+            Software developer
           </motion.span>
+  
           <motion.p
             variants={container(1)}
             initial="hidden"
             animate="visible"
-            className="max-w-xl py-6 text-gray-400"
+            className="text-base sm:text-lg text-gray-400 leading-relaxed font-light"
           >
             Hello, and welcome to my portfolio! I'm a 2nd year computer science undergraduate with a strong foundation in web development and currently exploring frameworks like React. My journey in tech has been shaped by a commitment to learning and a passion for building functional, engaging websites and applications.
           </motion.p>
@@ -46,48 +52,47 @@ const Intro = () => {
             variants={container(1.5)}
             initial="hidden"
             animate="visible"
-            className="m-8 flex items-center justify-center gap-6 md:gap-10 text-4xl"
+            className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 pt-4"
           >
-            {/* Download CV Button with gradient border and glow */}
+            {/* Download CV */}
             <a
               href="/Dulain_Perera_CV.pdf"
               download
-              className="group relative inline-block rounded-full p-[2px] bg-gradient-to-r from-sky-400 via-blue-500 to-purple-500 shadow-lg shadow-blue-500/30 hover:shadow-blue-500/60 transition duration-300 ease-in-out"
+              className="group relative inline-block rounded-full p-[1px] bg-gradient-to-r from-sky-400 via-blue-500 to-indigo-500 shadow-lg shadow-sky-500/25 hover:shadow-sky-500/50 transition-all duration-300 ease-in-out"
             >
-              <span className="flex items-center justify-center px-6 py-2 text-sm md:text-lg text-gray-300 bg-neutral-950 rounded-full group-hover:text-white transition duration-300 ease-in-out">
+              <span className="px-6 py-3 text-sm sm:text-base text-gray-300 bg-neutral-950 rounded-full group-hover:text-white group-hover:bg-neutral-900 transition-all duration-300 ease-in-out">
                 Download CV
               </span>
             </a>
 
-            {/* Get in Touch Button with same style */}
+            {/* Get in Touch */}
             <a
               href="mailto:dulainp337@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative inline-block rounded-full p-[2px] bg-gradient-to-r from-sky-400 via-blue-500 to-purple-500 shadow-lg shadow-blue-500/30 hover:shadow-blue-500/60 transition duration-300 ease-in-out"
+              className="group relative inline-block rounded-full p-[1px] bg-gradient-to-r from-zinc-500 via-gray-600 to-zinc-700 shadow-lg shadow-zinc-500/25 hover:shadow-zinc-400/50 transition-all duration-300 ease-in-out"
             >
-              <span className="flex items-center justify-center px-6 py-2 text-sm md:text-lg text-gray-300 bg-neutral-950 rounded-full group-hover:text-white transition duration-300 ease-in-out">
+              <span className="px-6 py-3 text-sm sm:text-base text-gray-300 bg-neutral-950 rounded-full group-hover:text-zinc-100 group-hover:bg-neutral-900 transition-all duration-300 ease-in-out">
                 Get in Touch
               </span>
             </a>
           </motion.div>
-
         </div>
 
         {/* Image Section */}
-        <div className="w-full lg:w-1/2 flex justify-center items-center mb-8 lg:mb-0">
+        <div className="w-full lg:w-1/2 flex justify-center items-center">
           <motion.img
             initial={{ x: 100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 1, delay: 1.2 }}
             src={profilePic}
             alt="Dulain Perera"
-            className="rounded-full shadow-lg w-40 h-40 md:w-80 md:h-80 object-cover"
+            className="rounded-full shadow-lg w-40 h-40 sm:w-60 sm:h-60 md:w-72 md:h-72 object-cover"
           />
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default Intro;

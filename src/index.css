@@ -1,7 +1,5 @@
-
-
-
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Calistoga&display=swap');
 
 :root {
   font-family: "Inter", sans-serif;
@@ -12,5 +10,11 @@ html {
 }
 
 body {
-  @apply bg-zinc-900 text-zinc-50
+  @apply text-zinc-50 antialiased ;
 }
+
+
+.nav-item{
+  @apply px-4 py-1.5 rounded-full text-white/70 text-sm font-semibold;
+}
+

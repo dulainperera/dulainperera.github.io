@@ -1,4 +1,7 @@
 import Header from './components/Header';
+import Footer from './components/Footer';
+
+
 
 const App = () => {
   return (
@@ -14,6 +17,12 @@ const App = () => {
       {/* Content */}
       <div className="relative z-10">
         <Header />
+
+
+
+
+
+        <Footer />
       </div>
     </div>
   );

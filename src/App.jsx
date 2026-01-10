@@ -1,5 +1,6 @@
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Intro from './components/Intro';
 
 
 
@@ -18,7 +19,7 @@ const App = () => {
       <div className="relative z-10">
         <Header />
 
-
+        <Intro />
 
 
 

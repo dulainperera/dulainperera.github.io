@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
 
 
 const Contact = () => {
@@ -29,14 +28,11 @@ const Contact = () => {
 
   return (
     <div className="border-t border-neutral-800 pb-20">
-      <motion.h1
-        whileInView={{ opacity: 1, y: 0 }}
-        initial={{ opacity: 0, y: -100 }}
-        transition={{ duration: 0.5 }}
+      <h1
         className="my-15 text-center text-4xl"
       >
         Get in touch
-      </motion.h1>
+      </h1>
 
       <form onSubmit={onsubmit} className="max-w-xl mx-auto mt-10 flex flex-col gap-6">
         <input

@@ -1,5 +1,3 @@
-import { motion } from 'framer-motion';
-
 const Tech = () => {
   const technologies = [
     {
@@ -98,11 +96,8 @@ const Tech = () => {
 
   return (
     <div className="pb-24 lg:mb-35">
-      <motion.h1 className="text-center text-4xl mb-20 lg:mt-16">Technologies</motion.h1>
-      <motion.div
-        whileInView={{ opacity: 1, x: 0 }}
-        initial={{ opacity: 0, x: -100 }}
-        transition={{ duration: 1.5 }}
+      <h1 className="text-center text-4xl mb-20 lg:mt-16">Technologies</h1>
+      <div
         className="flex flex-wrap items-center justify-center gap-8 mt-8"
       >
         {technologies.map((tech, index) => (
@@ -113,7 +108,7 @@ const Tech = () => {
             {tech.svg}
           </div>
         ))}
-      </motion.div>
+      </div>
     </div>
   );
 };

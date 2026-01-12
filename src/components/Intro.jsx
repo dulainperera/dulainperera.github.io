@@ -1,57 +1,36 @@
 import profilePic from '../assets/profile-pic.jpg';
-import { motion } from 'framer-motion';
-
-
-const container = (delay) => ({
-  hidden: { x: -100, opacity: 0 },
-  visible: {
-    x: 0,
-    opacity: 1,
-    transition: { duration: 0.5, delay: delay },
-  },
-});
 
 const Intro = () => {
   return (
-    <div className="px-4 sm:px-8 pt-4 pb-16 lg:pb-24">
-      <div className="flex flex-col-reverse lg:flex-row items-center gap-10">
+    <div className="relative min-h-screen flex flex-col items-center justify-center px-4">
+      <div className="container max-w-4xl mx-auto text-center z-10">
         
         {/* Text Section */}
-        <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left space-y-4 sm:space-y-6 max-w-2xl">
+        <div className="space-y-6">
           
-          <h1 className="text-xl sm:text-2xl text-zinc-400">Hello, I'm</h1>
+          <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
+            <span className="bg-gradient-to-r from-gray-400 to-gray-600 bg-clip-text text-transparent">Hi I'm </span>
+            <span>Dulain Perera</span>
+          
+          </h1>
+
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto opacity-0 animate-fade-in-delay-4">Hello, and welcome to my portfolio! I'm a 2nd year computer science undergraduate with a strong foundation in web development and currently exploring frameworks like React. My journey in tech has been shaped by a commitment to learning and a passion for building functional, engaging websites and applications.</p>
   
-          <motion.h1
-            variants={container(0)}
-            initial="hidden"
-            animate="visible"
-            className="text-4xl sm:text-5xl font-light tracking-tight bg-gradient-to-r from-sky-500 to-zinc-500 bg-clip-text text-transparent"
-          >
-            Dulain Perera
-          </motion.h1>
+        
   
-          <motion.span
-            variants={container(0.5)}
-            initial="hidden"
-            animate="visible"
+          <span
             className="text-2xl sm:text-3xl font-medium bg-gradient-to-r from-gray-400 to-gray-600 bg-clip-text text-transparent"
           >
             Software developer
-          </motion.span>
+          </span>
   
-          <motion.p
-            variants={container(1)}
-            initial="hidden"
-            animate="visible"
+          <p
             className="text-base sm:text-lg text-gray-400 leading-relaxed font-light"
           >
-            Hello, and welcome to my portfolio! I'm a 2nd year computer science undergraduate with a strong foundation in web development and currently exploring frameworks like React. My journey in tech has been shaped by a commitment to learning and a passion for building functional, engaging websites and applications.
-          </motion.p>
+            
+          </p>
 
-          <motion.div
-            variants={container(1.5)}
-            initial="hidden"
-            animate="visible"
+          <div
             className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 pt-4"
           >
             {/* Download CV */}
@@ -76,15 +55,12 @@ const Intro = () => {
                 Get in Touch
               </span>
             </a>
-          </motion.div>
+          </div>
         </div>
 
         {/* Image Section */}
         <div className="w-full lg:w-1/2 flex justify-center items-center">
-          <motion.img
-            initial={{ x: 100, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 1, delay: 1.2 }}
+          <img
             src={profilePic}
             alt="Dulain Perera"
             className="rounded-full shadow-lg w-40 h-40 sm:w-60 sm:h-60 md:w-72 md:h-72 object-cover"

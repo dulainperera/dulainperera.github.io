@@ -3,11 +3,7 @@
 const Footer = () => {
 
   return (
-    <div className="mb-16 inset-0 -z-10"
-  style={{
-    background:
-      "radial-gradient(125% 125% at 50% 10%, #000000 40%, #0d1a36 100%)",
-  }}>
+    <div className="mb-16 inset-0 -z-10">
       
       <div className="absolute "></div>
       {/* social Icons */}
@@ -18,7 +14,7 @@ const Footer = () => {
           aria-label="Facebook"
           target="_blank"
           rel="noopener noreferrer"
-          className="rounded-full bg-transparent p-4 sm:p-3 text-surface transition duration-150 ease-in-out text-white/70 hover:text-neutral-300"
+          className="rounded-full bg-transparent p-4 sm:p-3 text-surface link-style"
         >
           <span className="[&>svg]:h-6 [&>svg]:w-6 sm:[&>svg]:h-5 sm:[&>svg]:w-5">
             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 320 512">
@@ -33,7 +29,7 @@ const Footer = () => {
           aria-label="Instagram"
           target="_blank"
           rel="noopener noreferrer"
-          className="rounded-full bg-transparent p-4 sm:p-3 text-surface transition duration-150 ease-in-out text-white/70  hover:text-neutral-300"
+          className="rounded-full bg-transparent p-4 sm:p-3 transition duration-150 ease-in-out link-style"
         >
           <span className="[&>svg]:h-6 [&>svg]:w-6 sm:[&>svg]:h-5 sm:[&>svg]:w-5">
             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512">
@@ -48,7 +44,7 @@ const Footer = () => {
           aria-label="LinkedIn"
           target="_blank"
           rel="noopener noreferrer"
-          className="rounded-full bg-transparent p-4 sm:p-3 text-surface text-white/70 transition duration-150 ease-in-out hover:text-neutral-300"
+          className="rounded-full bg-transparent p-4 sm:p-3 text-surface link-style"
         >
           <span className="[&>svg]:h-6 [&>svg]:w-6 sm:[&>svg]:h-5 sm:[&>svg]:w-5">
             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512">
@@ -63,7 +59,7 @@ const Footer = () => {
           aria-label="GitHub"
           target="_blank"
           rel="noopener noreferrer"
-          className="rounded-full bg-transparent p-4 sm:p-3 text-surface text-white/70 transition duration-150 ease-in-out hover:text-neutral-300"
+          className="rounded-full bg-transparent p-4 sm:p-3 text-surface link-style"
         >
           <span className="[&>svg]:h-6 [&>svg]:w-6 sm:[&>svg]:h-5 sm:[&>svg]:w-5">
             <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 496 512">
@@ -74,7 +70,7 @@ const Footer = () => {
       </div>
 
       {/* Footer */}
-      <div className="w-full p-4 text-center text-sm ">
+      <div className="w-full p-4 text-center text-sm text-white/70 ">
         © 2025 Copyright: Dulain Perera
       </div>
     </div>

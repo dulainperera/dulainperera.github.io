@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
 @import "tailwindcss";
 
 :root {
-  font-family: "Inter", sans-serif;
+  font-family: "Google Sans", sans-serif;
+  font-optical-sizing: auto;
 }
 
 html {
@@ -9,19 +11,18 @@ html {
 }
 
 body {
-  @apply text-zinc-50 antialiased ;
+  @apply text-zinc-50 antialiased;
 }
 
-.inter {
+.roboto {
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
 }
 
-.nav-item{
+.nav-item {
   @apply px-4 py-1.5 rounded-full text-white/70 text-base transition duration-150 ease-in-out hover:text-neutral-100;
 }
-
 
 @layer components {
   .link-style {

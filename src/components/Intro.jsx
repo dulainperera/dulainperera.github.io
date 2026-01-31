@@ -3,7 +3,7 @@ import profilePic from '../assets/profile-pic.jpg';
 
 const Intro = () => {
   return (
-    <div className="relative min-h-screen flex flex-col items-center justify-center px-4">
+    <div className="relative min-h-screen flex flex-col items-center justify-center px-4 mt-16">
       <div className="container max-w-4xl mx-auto text-center z-10">
         
         {/* Text Section */}
@@ -23,18 +23,20 @@ const Intro = () => {
           
           </h1>
 
-          <p className="text-lg md:text-xl text-gray-400">Hello, and welcome to my portfolio! I'm a 2nd year computer science undergraduate with a strong foundation in web development and currently exploring frameworks like React. Also interested in digital marketing and QA. My journey in tech has been shaped by a commitment to learning and a passion for building functional, engaging websites and applications.</p>          
+          <p className="text-lg md:text-xl text-gray-400">Hello, and welcome to my portfolio! I'm a 2nd year computer science undergraduate with a strong foundation in web development. Also interested in digital marketing and QA. My journey in tech has been shaped by a commitment to learning and a passion for building functional, engaging websites and applications.</p>          
 
           <div
             className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 pt-4"
           >
-            {/* Download CV */}
+            
             <a
               href="mailto:dulainp337@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-4 rounded-full text-body border border-white/20 
-               backdrop-blur-lg shadow-lg font-medium leading-5 rounded-base  px-4 focus:outline-none"
+              className="p-4 rounded-full 
+              border border-white/20 bg-black/40
+               backdrop-blur-lg  text-body
+               shadow-lg font-medium leading-5 rounded-base  px-4 focus:outline-none text-white/70 transition duration-150 ease-in-out hover:text-neutral-100 hover:border-neutral-100"
             >
               Get In Touch 
             </a>

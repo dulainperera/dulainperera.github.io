@@ -3,7 +3,7 @@ import profilePic from '../assets/profile-pic.jpg';
 
 const Intro = () => {
   return (
-    <div className="relative min-h-screen flex flex-col items-center justify-center px-4 mt-16">
+    <div className="relative min-h-screen flex flex-col items-center justify-center px-4 mt-14">
       <div className="container max-w-4xl mx-auto text-center z-10">
         
         {/* Text Section */}
@@ -13,7 +13,7 @@ const Intro = () => {
             <img
               src={profilePic}
               alt="Dulain Perera"
-              className="rounded-full shadow-lg w-40 h-40 sm:w-60 sm:h-60 md:w-72 md:h-72 object-cover"
+              className="rounded-full shadow-lg w-20 h-20 sm:w-60 sm:h-60 md:w-72 md:h-72 object-cover"
             />
           </div>  
           

@@ -27,7 +27,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="border-t border-neutral-800 pb-20">
+    <div className=" pb-20">
       <h1
         className="my-15 text-center text-4xl"
       >

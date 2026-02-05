@@ -2,6 +2,8 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Intro from './components/Intro';
 import Projects from './components/Projects';
+import Contact from './components/Contact';
+import Technology from './components/Technology';
 
 
 
@@ -24,8 +26,11 @@ const App = () => {
 
         <Intro />
 
+        <Technology/>
+
         <Projects />
 
+        <Contact />
 
         <Footer />
       </div>

@@ -5,10 +5,6 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Technology from './components/Technology';
 
-
-
-
-
 const App = () => {
   return (
     <div className="min-h-screen w-full relative overflow-x-hidden text-white antialiased">
@@ -24,13 +20,21 @@ const App = () => {
       <div className="relative z-10">
         <Header />
 
-        <Intro />
+        <section id="home">
+          <Intro />
+        </section>
 
-        <Technology/>
+        <section id="technology">
+          <Technology/>
+        </section>
 
-        <Projects />
+        <section id="projects">
+          <Projects />
+        </section>
 
-        <Contact />
+        <section id="contact">
+          <Contact />
+        </section>
 
         <Footer />
       </div>

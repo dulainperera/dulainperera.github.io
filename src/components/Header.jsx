@@ -4,16 +4,16 @@ function Header() {
       <nav className="flex gap-1 p-0.5 rounded-full 
               border border-white/20 bg-white/10
                backdrop-blur-lg shadow-lg fixed top-0 z-50">
-        <a href="#" className="nav-item">
+        <a href="#home" className="nav-item">
           Home
         </a>
-        <a href="#" className="nav-item">
+        <a href="#projects" className="nav-item">
           Projects
         </a>
-        <a href="#" className="nav-item">
+        <a href="#about" className="nav-item">
           About
         </a>
-        <a href="#" className="px-4 py-1.5 rounded-full text-base text-gray-900 bg-white">
+        <a href="#contact" className="px-4 py-1.5 rounded-full text-base text-gray-900 bg-white">
           Contact
         </a>
       </nav>
